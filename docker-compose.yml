@@ -90,7 +90,7 @@ services:
       context: .
       dockerfile: containers/database/Dockerfile
     environment:
-      MYSQL_RANDOM_ROOT_PASSWORD: enabled
+      MYSQL_RANDOM_ROOT_PASSWORD: disabled
       MYSQL_USER: ${DATABASE_USER:-eq}
       MYSQL_PASSWORD: ${DATABASE_PASSWORD:-eq}
       MYSQL_DATABASE: ${DATABASE_NAME:-eq}
